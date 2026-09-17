@@ -1,0 +1,8 @@
+services:
+  bbpoc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgres://bbpoc_user:BBPOC_ONLY_2026@example.invalid/pocdb
+      THIRD_PARTY_API_TOKEN: BBPOC_TOKEN_ONLY_2026_DO_NOT_USE
